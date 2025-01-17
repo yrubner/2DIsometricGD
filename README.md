@@ -6,7 +6,7 @@ This is my personal repository for the 2D Isometric Game from the udemy course "
 - [x] 1: Download godot and import the assets
 - [x] 2: Create the player and fixing blurry pixel art
 - [x] 3: Create the player movement and a simple camera
-- [ ] 4: Create the player idle animation
+- [x] 4: Create the player idle animation
 - [ ] 5: Creating the movement and attack animations and sword collision shapes
 - [ ] 6: Create the death animations
 - [ ] 7: Create the animation tree for idle, move and sword swings
