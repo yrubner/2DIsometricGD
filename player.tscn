@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dlvaocu5d8wn0"]
+[gd_scene load_steps=6 format=3 uid="uid://dlvaocu5d8wn0"]
 
 [ext_resource type="Texture2D" uid="uid://cen6vdb6app0w" path="res://Entities/Player/isometric_player_1.png" id="1_phmxe"]
+[ext_resource type="Script" path="res://Entities/Player/player.gd" id="1_xl8dg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0e17b"]
 radius = 6.0
@@ -11,6 +12,7 @@ size = Vector2(10, 20)
 [sub_resource type="CircleShape2D" id="CircleShape2D_i8fwx"]
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_xl8dg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_phmxe")
