@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlvaocu5d8wn0"]
+
+[ext_resource type="Texture2D" uid="uid://cen6vdb6app0w" path="res://Entities/Player/isometric_player_1.png" id="1_phmxe"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0e17b"]
+radius = 6.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_diyrx"]
+size = Vector2(10, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i8fwx"]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_phmxe")
+hframes = 8
+vframes = 16
+
+[node name="anim" type="AnimationPlayer" parent="."]
+
+[node name="player_collider" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_0e17b")
+
+[node name="sword" type="Area2D" parent="."]
+
+[node name="sword_collider" type="CollisionShape2D" parent="sword"]
+position = Vector2(11, 0)
+shape = SubResource("RectangleShape2D_diyrx")
+disabled = true
+debug_color = Color(0.988436, 0, 0.302014, 0.42)
+
+[node name="hurtbox" type="Area2D" parent="."]
+
+[node name="hurtbox_collider" type="CollisionShape2D" parent="hurtbox"]
+shape = SubResource("CircleShape2D_i8fwx")
+debug_color = Color(0.775878, 0.439759, 0.0496826, 0.42)
